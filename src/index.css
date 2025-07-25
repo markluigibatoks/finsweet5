@@ -174,7 +174,7 @@ body {
 }
 
 .page-numbers.current {
-  @apply bg-primary border-primary cursor-default font-700;
+  @apply bg-primary border-primary cursor-default font-bold;
 }
 
 ul.page-numbers {
