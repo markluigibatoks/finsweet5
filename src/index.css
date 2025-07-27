@@ -98,12 +98,16 @@ body {
         font-size: var(--text-paragraph);
         line-height: 16px;
         color: var(--color-black);
-        white-space: nowrap;
+        text-wrap: nowrap;
         letter-spacing: var(--tracking-normal);
         text-transform: uppercase;
 
         @variant hover {
             background-color: var(--color-primary-hover);
+        }
+
+        @variant active {
+            @apply opacity-70;
         }
 
         @media screen and (min-width: 1024px) {
@@ -123,12 +127,16 @@ body {
         font-size: var(--text-paragraph);
         line-height: 16px;
         color: var(--color-primary);
-        white-space: nowrap;
+        text-wrap: nowrap;
         letter-spacing: var(--tracking-normal);
         text-transform: uppercase;
 
         @variant hover {
             background-color: var(--color-white);
+        }
+
+        @variant active {
+            @apply opacity-70;
         }
 
         @media screen and (min-width: 1024px) {
@@ -148,12 +156,16 @@ body {
         font-size: var(--text-paragraph);
         line-height: 16px;
         color: var(--color-black);
-        white-space: nowrap;
+        text-wrap: nowrap;
         letter-spacing: var(--tracking-normal);
         text-transform: uppercase;
 
         @variant hover {
             background-color: var(--color-primary-hover);
+        }
+
+        @variant active {
+            @apply opacity-70;
         }
 
         @media screen and (min-width: 1024px) {
