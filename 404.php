@@ -2,11 +2,7 @@
 get_header();
 ?>
 
-<div class="min-h-screen min-w-screen lg:pt-6 xl:px-14 bg-gradient-light-blue-10">
-<?php
-    get_template_part("/partials/header");
-?>
-
+<div class="min-h-screen min-w-screen lg:pt-6 xl:px-14">
   <main class="lg:pt-48 pt-20 max-w-[378px] w-full text-center mx-auto">
     <span class="mt-8 block text-blue">404</span>
     <h1 class="my-6 xl:text-h1 lg:text-h2 md:text-h4 text-h5">Page Not Found</h1>
