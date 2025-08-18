@@ -9,32 +9,43 @@
     <header class="z-10 sticky top-0">
       <div class="z-10 main-box bg-black">
         <div class="wrapper">
-          <div class="py-3 lg:py-0 flex items-center justify-between">
+          <div class="py-3 lg:py-0 flex items-center">
             <a href="<?php echo site_url('/')?>">
-              <div class="xl:pr-16 pr-6">
+              <div class="lg:pr-12 pr-6">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="logo" />
               </div>
             </a>
 
             <nav class="hidden lg:block">
-                <ul class="flex gap-12">
-                    <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline <?php echo is_front_page() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Home</a>
+                <ul class="flex gap-10">
+                    <li class="py-7">
+                      <a class="nav-link text-white hover:underline <?php echo is_front_page() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Home</a>
                     </li>
-                    <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline" href="#">About Us</a>
+                    <li class="py-7">
+                      <a class="nav-link text-white hover:underline <?php echo is_page('/menu') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Menu</a>
                     </li>
-                    <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline" href="#">Services</a>
+                    <li class="py-7">
+                      <a class="nav-link text-white hover:underline <?php echo is_page('/about-us') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/about-us'); ?>">About Us</a>
                     </li>
-                    <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline" href="#">Blog</a>
+                    <li class="py-7">
+                      <a class="nav-link text-white hover:underline <?php echo is_page('/our-story') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/our-story'); ?>">Our Story</a>
                     </li>
-                    <li>
-                      <a class="leading-20 uppercase text-label-2 tracking-normal font-light opacity-90 text-white hover:underline" href="#">Contact Us</a>
+                    <li class="py-7">
+                      <a class="nav-link text-white hover:underline <?php echo is_home() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/blog'); ?>">Blog</a>
+                    </li>
+                    <li class="py-7">
+                      <a class="nav-link text-white hover:underline <?php echo is_page('/contact') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/contact'); ?>">Contact</a>
                     </li>
                 </ul>
             </nav>
+
+            <a class="ml-auto flex items-center gap-3 text-label-2 text-colour-200">
+              Clone Project
+              <div class="flex items-center justify-center text-white">
+                <?php echo file_get_contents(get_template_directory() . '/assets/images/arrow.svg'); ?>
+              </div>
+            </a>
+
             <?php get_template_part('/partials/drawer-toggle') ?>
           </div>
         </div>

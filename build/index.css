@@ -17,6 +17,10 @@
     --spacing: 0.25rem;
     --container-4xl: 56rem;
     --container-7xl: 80rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
@@ -724,11 +728,20 @@
   .-mr-2 {
     margin-right: calc(var(--spacing) * -2);
   }
+  .-mr-5 {
+    margin-right: calc(var(--spacing) * -5);
+  }
+  .mr-auto {
+    margin-right: auto;
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
   }
   .ml-auto {
     margin-left: auto;
@@ -832,11 +845,17 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
@@ -921,6 +940,9 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-7 {
+    padding-block: calc(var(--spacing) * 7);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
@@ -965,9 +987,17 @@
     line-height: var(--tw-leading, var(--text-paragraph--line-height));
     letter-spacing: var(--tw-tracking, var(--text-paragraph--letter-spacing));
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-h5 {
     font-size: var(--text-h5);
@@ -988,21 +1018,9 @@
     --tw-leading: calc(var(--spacing) * 16);
     line-height: calc(var(--spacing) * 16);
   }
-  .leading-20 {
-    --tw-leading: calc(var(--spacing) * 20);
-    line-height: calc(var(--spacing) * 20);
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
-  }
-  .tracking-normal {
-    --tw-tracking: var(--tracking-normal);
-    letter-spacing: var(--tracking-normal);
   }
   .tracking-tighter {
     --tw-tracking: var(--tracking-tighter);
@@ -1016,6 +1034,9 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-colour-200 {
+    color: var(--color-colour-200);
   }
   .text-primary {
     color: var(--color-primary);
@@ -1040,9 +1061,6 @@
   }
   .opacity-78 {
     opacity: 78%;
-  }
-  .opacity-90 {
-    opacity: 90%;
   }
   .opacity-100 {
     opacity: 100%;
@@ -1351,6 +1369,11 @@
       padding-top: calc(var(--spacing) * 54);
     }
   }
+  .lg\:pr-12 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:pr-55 {
     @media (width >= 64rem) {
       padding-right: calc(var(--spacing) * 55);
@@ -1437,72 +1460,21 @@ body {
   .button-primary {
     background-color: var(--color-colour-200);
     padding: 8px 16px;
+    min-width: 164px;
     text-align: center;
-    font-size: var(--text-paragraph);
-    line-height: 16px;
-    color: var(--color-black);
+    font-size: var(--text-label-med);
+    color: #2E2D33;
     text-wrap: nowrap;
-    letter-spacing: var(--tracking-normal);
-    text-transform: uppercase;
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-primary-hover);
+        opacity: 90%;
       }
     }
     &:active {
       opacity: 70%;
     }
     @media screen and (min-width: 1024px) {
-      border-radius: 28px;
-      padding: 24px 64px;
-    }
-  }
-  .button-secondary {
-    background-color: var(--color-black);
-    border-radius: var(--radius-lg);
-    padding: 8px 16px;
-    text-align: center;
-    font-size: var(--text-paragraph);
-    line-height: 16px;
-    color: var(--color-primary);
-    text-wrap: nowrap;
-    letter-spacing: var(--tracking-normal);
-    text-transform: uppercase;
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-white);
-      }
-    }
-    &:active {
-      opacity: 70%;
-    }
-    @media screen and (min-width: 1024px) {
-      border-radius: var(--radius-xl);
-      padding: 24px 64px;
-    }
-  }
-  .button-nav {
-    background-color: var(--color-primary);
-    border-radius: var(--radius-lg);
-    padding: 8px 16px;
-    text-align: center;
-    font-size: var(--text-paragraph);
-    line-height: 16px;
-    color: var(--color-black);
-    text-wrap: nowrap;
-    letter-spacing: var(--tracking-normal);
-    text-transform: uppercase;
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-primary-hover);
-      }
-    }
-    &:active {
-      opacity: 70%;
-    }
-    @media screen and (min-width: 1024px) {
-      border-radius: var(--radius-xl);
-      padding: 20px 48px;
+      padding: 12px 22px;
     }
   }
 }
