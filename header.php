@@ -39,7 +39,7 @@
                 </ul>
             </nav>
 
-            <a class="ml-auto flex items-center gap-3 text-label-2 text-colour-200">
+            <a href="https://github.com/markluigibatoks/finsweet5" target="_blank" class="hover:underline ml-auto flex items-center gap-3 text-label-2 text-colour-200">
               Clone Project
               <div class="flex items-center justify-center text-white">
                 <?php echo file_get_contents(get_template_directory() . '/assets/images/arrow.svg'); ?>
