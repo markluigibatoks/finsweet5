@@ -1,4 +1,4 @@
-<div class="main-box lg:py-40 py-10">
+<div class="main-box lg:py-40 py-20">
     <div class="wrapper">
         <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
             <div class="lg:order-2 flex lg:gap-17 md:gap-10 gap-5">
@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            <div class="lg:order-1 max-w-[613px] w-full text-center lg:text-left">
+            <div class="lg:order-1 lg:max-w-[613px] w-full text-center lg:text-left">
                 <div class="flex gap-4 items-center justify-center lg:justify-start">
                     <span class="text-cap-1 font-playfair uppercase text-colour-200">Know More About Us</span>
                     <div class="flex items-center justify-center">
