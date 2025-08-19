@@ -1,5 +1,5 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -30,10 +30,15 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-playfair: "Playfair", serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-playfair: "Playfair Display", serif;
     --text-paragraph: 16px;
     --text-paragraph--line-height: 28px;
     --text-paragraph--letter-spacing: 0px;
+    --text-h6: 16px;
+    --text-h6--font-weight: 700;
+    --text-h6--line-height: 150%;
+    --text-h6--letter-spacing: 0px;
     --text-h5: 14px;
     --text-h4--line-height: 30px;
     --text-h5--font-weight: 700;
@@ -53,17 +58,30 @@
     --text-h1--font-weight: 700;
     --text-h1--line-height: 68px;
     --text-h1--letter-spacing: 0px;
+    --text-number-1: 24px;
+    --text-number-1--font-weight: 500;
+    --text-number-1--line-height: 36px;
+    --text-number-1--letter-spacing: 0px;
+    --text-label-1: 24px;
+    --text-label-1--line-height: 32px;
     --text-label-2: 16px;
     --text-label-2--font-weight: 500;
     --text-label-2--line-height: 24px;
     --text-label-2--letter-spacing: 0;
     --text-label-3: 18px;
+    --text-cap-1: 16px;
+    --text-cap-1--font-weight: 400;
+    --text-cap-1--line-height: 24px;
+    --text-cap-1--letter-spacing: 0px;
     --text-cap-2: 14px;
     --text-cap-3: 12px;
     --text-cap-3--letter-spacing: 0%;
     --color-primary: #FFD2A4;
+    --color-primary-hover: #F2C79B;
+    --color-light-orange: #FFF5EB;
     --color-grey: #2E2D33;
     --color-colour-200: #FFB577;
+    --color-colour-300: #C4E4EA;
     --color-colour-0: #19161B;
   }
 }
@@ -283,6 +301,9 @@
   }
   .my-0 {
     margin-block: calc(var(--spacing) * 0);
+  }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
   }
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
@@ -726,6 +747,9 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
+  .mt-21 {
+    margin-top: calc(var(--spacing) * 21);
+  }
   .-mr-2 {
     margin-right: calc(var(--spacing) * -2);
   }
@@ -735,14 +759,8 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
-  .ml-0 {
-    margin-left: calc(var(--spacing) * 0);
-  }
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
-  }
-  .ml-3 {
-    margin-left: calc(var(--spacing) * 3);
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
@@ -810,6 +828,9 @@
   .max-w-\[512px\] {
     max-width: 512px;
   }
+  .max-w-\[613px\] {
+    max-width: 613px;
+  }
   .max-w-\[624px\] {
     max-width: 624px;
   }
@@ -855,14 +876,11 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -878,6 +896,9 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .gap-17 {
+    gap: calc(var(--spacing) * 17);
   }
   .gap-18 {
     gap: calc(var(--spacing) * 18);
@@ -983,15 +1004,6 @@
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
-  .pr-0 {
-    padding-right: calc(var(--spacing) * 0);
-  }
-  .pr-2 {
-    padding-right: calc(var(--spacing) * 2);
-  }
-  .pr-3 {
-    padding-right: calc(var(--spacing) * 3);
-  }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
   }
@@ -1010,11 +1022,11 @@
   .font-playfair {
     font-family: var(--font-playfair);
   }
-  .text-h1 {
-    font-size: var(--text-h1);
-    line-height: var(--tw-leading, var(--text-h1--line-height));
-    letter-spacing: var(--tw-tracking, var(--text-h1--letter-spacing));
-    font-weight: var(--tw-font-weight, var(--text-h1--font-weight));
+  .text-cap-1 {
+    font-size: var(--text-cap-1);
+    line-height: var(--tw-leading, var(--text-cap-1--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-cap-1--letter-spacing));
+    font-weight: var(--tw-font-weight, var(--text-cap-1--font-weight));
   }
   .text-h3 {
     font-size: var(--text-h3);
@@ -1033,6 +1045,12 @@
     line-height: var(--tw-leading, var(--text-label-2--line-height));
     letter-spacing: var(--tw-tracking, var(--text-label-2--letter-spacing));
     font-weight: var(--tw-font-weight, var(--text-label-2--font-weight));
+  }
+  .text-number-1 {
+    font-size: var(--text-number-1);
+    line-height: var(--tw-leading, var(--text-number-1--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-number-1--letter-spacing));
+    font-weight: var(--tw-font-weight, var(--text-number-1--font-weight));
   }
   .text-paragraph {
     font-size: var(--text-paragraph);
@@ -1084,6 +1102,9 @@
   }
   .text-colour-200 {
     color: var(--color-colour-200);
+  }
+  .text-colour-300 {
+    color: var(--color-colour-300);
   }
   .text-grey {
     color: var(--color-grey);
@@ -1185,6 +1206,62 @@
       opacity: 0%;
     }
   }
+  .before\:mr-2 {
+    &::before {
+      content: var(--tw-content);
+      margin-right: calc(var(--spacing) * 2);
+    }
+  }
+  .before\:content-\[url\(\'\.\.\/assets\/images\/front-page\/middle1-icon1\.png\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: url('../assets/images/front-page/middle1-icon1.png');
+      content: var(--tw-content);
+    }
+  }
+  .after\:relative {
+    &::after {
+      content: var(--tw-content);
+      position: relative;
+    }
+  }
+  .after\:block {
+    &::after {
+      content: var(--tw-content);
+      display: block;
+    }
+  }
+  .after\:flex {
+    &::after {
+      content: var(--tw-content);
+      display: flex;
+    }
+  }
+  .after\:inline-block {
+    &::after {
+      content: var(--tw-content);
+      display: inline-block;
+    }
+  }
+  .after\:items-center {
+    &::after {
+      content: var(--tw-content);
+      align-items: center;
+    }
+  }
+  .after\:align-middle {
+    &::after {
+      content: var(--tw-content);
+      vertical-align: middle;
+    }
+  }
+  .after\:content-\[url\(\'\.\.\/assets\/images\/line\.svg\'\)\] {
+    &::after {
+      content: var(--tw-content);
+      --tw-content: url('../assets/images/line.svg');
+      content: var(--tw-content);
+    }
+  }
   .hover\:\!bg-red-600 {
     &:hover {
       @media (hover: hover) {
@@ -1233,14 +1310,14 @@
       margin-top: calc(var(--spacing) * 3);
     }
   }
-  .md\:ml-5 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 5);
-    }
-  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .md\:flex-row {
@@ -1256,6 +1333,11 @@
   .md\:gap-3 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 3);
+    }
+  }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
     }
   }
   .md\:text-h4 {
@@ -1311,6 +1393,11 @@
       margin-top: calc(var(--spacing) * 4);
     }
   }
+  .lg\:mt-6 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 6);
+    }
+  }
   .lg\:mt-7 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 7);
@@ -1361,6 +1448,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1374,6 +1466,16 @@
   .lg\:items-center {
     @media (width >= 64rem) {
       align-items: center;
+    }
+  }
+  .lg\:justify-start {
+    @media (width >= 64rem) {
+      justify-content: flex-start;
+    }
+  }
+  .lg\:gap-17 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 17);
     }
   }
   .lg\:rounded-tl-xl {
@@ -1414,6 +1516,11 @@
   .lg\:py-32 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:py-40 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 40);
     }
   }
   .lg\:pt-6 {
@@ -1680,6 +1787,11 @@ ul.page-numbers li {
   inherits: false;
   initial-value: 0;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
 @property --tw-gradient-position {
   syntax: "*";
   inherits: false;
@@ -1747,6 +1859,7 @@ ul.page-numbers li {
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-content: "";
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;
