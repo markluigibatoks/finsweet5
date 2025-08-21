@@ -16,7 +16,7 @@
     --text-h6--letter-spacing: 0px;
 
     --text-h5: 14px;
-    --text-h4--line-height: 21px;
+    --text-h5--line-height: 21px;
     --text-h5--font-weight: 700;
     --text-h5--letter-spacing: 0px;
 
@@ -76,6 +76,7 @@
     --color-colour-100: #B8B8B8;
     --color-colour-200: #FFB577;
     --color-colour-300: #C4E4EA;
+    --color-colour-400: #1F1D21;
     --color-colour-0: #19161B;
 }
 
