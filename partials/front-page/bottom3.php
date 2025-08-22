@@ -1,4 +1,4 @@
-<div class="main-box lg:py-40 py-20">
+<div class="main-box lg:pt-40 pt-20">
     <div class="wrapper">
         <h2 class="text-h2 text-white">Read Our Lastest Blog</h2>
 
