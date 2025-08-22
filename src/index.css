@@ -72,6 +72,11 @@
     --text-cap-3: 12px;
     --text-cap-3--letter-spacing: 0%;
 
+    --text-date-1: 14px;
+    --text-date-1--font-weight: 400;
+    --text-date-1--line-height: 24px;
+    --text-date-1--letter-spacing: 0px;
+
     --color-primary: #FFD2A4;
     --color-primary-hover: #F2C79B;
     --color-light-orange: #FFF5EB;
