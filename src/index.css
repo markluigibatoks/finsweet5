@@ -58,7 +58,10 @@
     --text-label-2--line-height: 24px;
     --text-label-2--letter-spacing: 0;
 
-    --text-label-3: 18px;
+    --text-label-3: 12px;
+    --text-label-3--font-weight: 500;
+    --text-label-3--line-height: 16px;
+    --text-label-3--letter-spacing: 0;
 
     --text-cap-1: 16px;
     --text-cap-1--font-weight: 400;
