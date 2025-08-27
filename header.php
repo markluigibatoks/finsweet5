@@ -6,8 +6,8 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="z-10 sticky top-0">
-      <div class="z-10 main-box bg-colour-0">
+    <header class="z-50 sticky top-0">
+      <div class="z-50 main-box bg-colour-0">
         <div class="wrapper">
           <div class="py-3 lg:py-0 flex items-center">
             <a href="<?php echo site_url('/')?>">
