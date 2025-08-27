@@ -1,17 +1,7 @@
 <main class="main-box lg:pb-40 lg:pt-24 py-20">
     <div class="wrapper">
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
-            <div class="lg:order-2 flex lg:gap-17 md:gap-10 gap-5">
-                <div class="mt-21 max-w-max">
-                    <img class="object-cover w-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/middle1-img1.jpg" alt="store ambiance"/>
-                </div>
-
-                <div class="max-w-max">
-                    <img class="object-cover w-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/middle1-img2.jpg" alt="store ambiance"/>
-                </div>
-            </div>
-
-            <div class="lg:order-1 lg:max-w-[613px] w-full text-center lg:text-left">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-5">
+            <div class="lg:max-w-[613px] w-full text-center lg:text-left">
                 <div class="flex gap-4 items-center justify-center lg:justify-start">
                     <span class="text-cap-1 font-playfair uppercase text-colour-200">Know More About Us</span>
                     <div class="flex items-center justify-center">
@@ -53,6 +43,16 @@
                         <?php echo file_get_contents(get_template_directory() . '/assets/images/arrow.svg'); ?>
                     </div>
                 </a>
+            </div>
+
+            <div class="flex lg:gap-17 md:gap-10 gap-5">
+                <div class="mt-21 max-w-max">
+                    <img class="object-cover w-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/middle1-img1.jpg" alt="store ambiance"/>
+                </div>
+
+                <div class="max-w-max">
+                    <img class="object-cover w-full" src="<?php echo get_template_directory_uri();?>/assets/images/front-page/middle1-img2.jpg" alt="store ambiance"/>
+                </div>
             </div>
         </div>
     </div>
