@@ -5,10 +5,20 @@
     'post_status' => 'publish'
   ]);
 
+  $link = '#';
+
+  if($recent_blog->have_posts()) {
+    while($recent_blog->have_posts()) {
+      $recent_blog->the_post();
+
+      $link = get_the_permalink();
+    }
+  }
+
   wp_reset_postdata();
 ?>
 
-<div class="main-box lg:pt-24 lg:pb-40 py-20">
+<main class="main-box lg:pt-24 lg:pb-40 py-20">
     <div class="wrapper">
         <h2 class="lg:mb-16 mb-10 text-center text-white font-playfair lg:text-h2 md:text-h3 text-h4">Featured Blogs</h2>
 
@@ -36,7 +46,7 @@
                     </div>
                   </div>
 
-                  <a href="<?php echo site_url('/menu') ?>" class="flex gap-2 items-center max-w-max text-white">
+                  <a href="<?php echo $link; ?>" class="hover:underline flex gap-2 items-center max-w-max text-white">
                       Read More
                       <div class="flex items-center justify-center text-white">
                           <?php echo file_get_contents(get_template_directory() . '/assets/images/arrow.svg'); ?>
@@ -85,4 +95,4 @@
           </ul>
         </div>
     </div>
-</div>
+</main>
