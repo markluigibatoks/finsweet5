@@ -20,7 +20,7 @@ class BlockDependency {
         ...settings.attributes,
         className: {
           type: 'string',
-          default: 'max-w-[768px] mx-auto'
+          default: 'max-w-[842px] mx-auto'
         }
       }
     };

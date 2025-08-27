@@ -1,17 +1,29 @@
 <?php get_header(); ?>
 
-<main class="main-box lg:py-16 py-10">
+<main class="main-box lg:pt-24 pt-20">
     <?php if (have_posts()) {
       while(have_posts()) {
-        the_post(); ?>
+        the_post();
+        $author_id = get_the_author_meta('ID');
+        ?>
         <div class="wrapper">
-          <div class="text-center">
-            <span class="text-cap-3 text-gradient uppercase">Relationship</span>
-            <h2 class="text-center lg:text-h2 md:text-h4 text-h5 lg:my-4 my-0"><?php the_title(); ?></h2>
-            <span> <?php echo get_the_date() . ' by ' . get_the_author(); ?> </span>
+          <div class="flex items-center gap-6 justify-center">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 max-w-max">
+                <img class="rounded-full object-cover w-full" src="<?php echo get_avatar_url($author_id, 32); ?>" alt=""/>
+              </div>
+
+              <span class="text-white/87 text-paragraph"><?php echo get_the_author(); ?></span>
+            </div>
+
+            <div class="text-center">
+              <span>Posted on <?php echo get_the_date(); ?> </span>
+              
+            </div>
           </div>
+          <h2 class="text-white text-center lg:text-h2 md:text-h3 text-h4 lg:mt-14 font-playfair my-0"><?php the_title(); ?></h2>
         </div>
-        <div class="lg:mt-16 mt-10 prose max-w-7xl mx-auto">
+        <div class="lg:mt-20 mt-10 prose prose-invert max-w-7xl mx-auto">
           <?php the_content(); ?>
         </div>
       <?php }
