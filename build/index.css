@@ -1755,6 +1755,11 @@
       max-width: 441px;
     }
   }
+  .lg\:max-w-\[445px\] {
+    @media (width >= 64rem) {
+      max-width: 445px;
+    }
+  }
   .lg\:max-w-\[450px\] {
     @media (width >= 64rem) {
       max-width: 450px;
