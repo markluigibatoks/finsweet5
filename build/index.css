@@ -923,8 +923,17 @@
   .max-w-\[538px\] {
     max-width: 538px;
   }
+  .max-w-\[547px\] {
+    max-width: 547px;
+  }
   .max-w-\[624px\] {
     max-width: 624px;
+  }
+  .max-w-\[625px\] {
+    max-width: 625px;
+  }
+  .max-w-\[648px\] {
+    max-width: 648px;
   }
   .max-w-\[768px\] {
     max-width: 768px;
@@ -1013,6 +1022,9 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-17 {
+    gap: calc(var(--spacing) * 17);
+  }
   .divide-y {
     :where(& > :not(:last-child)) {
       --tw-divide-y-reverse: 0;
@@ -1045,6 +1057,10 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -1072,6 +1088,12 @@
   .border-primary {
     border-color: var(--color-primary);
   }
+  .border-white\/4 {
+    border-color: color-mix(in srgb, #fff 4%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 4%, transparent);
+    }
+  }
   .border-white\/7 {
     border-color: color-mix(in srgb, #fff 7%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1090,6 +1112,21 @@
       border-color: color-mix(in oklab, var(--color-white) 24%, transparent);
     }
   }
+  .border-b-white\/5 {
+    border-bottom-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .border-b-white\/6 {
+    border-bottom-color: color-mix(in srgb, #fff 6%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-white) 6%, transparent);
+    }
+  }
+  .\!bg-colour-200 {
+    background-color: var(--color-colour-200) !important;
+  }
   .\!bg-primary {
     background-color: var(--color-primary) !important;
   }
@@ -1098,6 +1135,9 @@
   }
   .bg-\[\#8f6f56\] {
     background-color: #8f6f56;
+  }
+  .bg-\[\#27252D\] {
+    background-color: #27252D;
   }
   .bg-\[\#141115\] {
     background-color: #141115;
@@ -1228,6 +1268,9 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-3\.5 {
+    padding-block: calc(var(--spacing) * 3.5);
+  }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
@@ -1266,6 +1309,9 @@
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
@@ -1398,6 +1444,12 @@
   }
   .\!text-white {
     color: var(--color-white) !important;
+  }
+  .text-\[\#FFC492\] {
+    color: #FFC492;
+  }
+  .text-\[FFC492\] {
+    color: FFC492;
   }
   .text-black {
     color: var(--color-black);
@@ -1817,6 +1869,11 @@
       grid-column: span 1 / span 1;
     }
   }
+  .lg\:col-span-2 {
+    @media (width >= 64rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
   .lg\:mx-0 {
     @media (width >= 64rem) {
       margin-inline: calc(var(--spacing) * 0);
@@ -1845,6 +1902,11 @@
   .lg\:mt-6 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:mt-8 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 8);
     }
   }
   .lg\:mt-10 {
@@ -1997,6 +2059,11 @@
       max-width: 544px;
     }
   }
+  .lg\:max-w-\[547px\] {
+    @media (width >= 64rem) {
+      max-width: 547px;
+    }
+  }
   .lg\:max-w-\[549px\] {
     @media (width >= 64rem) {
       max-width: 549px;
@@ -2010,6 +2077,11 @@
   .lg\:max-w-\[613px\] {
     @media (width >= 64rem) {
       max-width: 613px;
+    }
+  }
+  .lg\:max-w-\[625px\] {
+    @media (width >= 64rem) {
+      max-width: 625px;
     }
   }
   .lg\:grid-cols-2 {
@@ -2200,6 +2272,11 @@
     @media (width >= 64rem) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .xl\:gap-17 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 17);
     }
   }
   .xl\:px-14 {
