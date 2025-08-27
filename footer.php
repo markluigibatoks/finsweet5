@@ -43,19 +43,19 @@
               <a class="nav-link text-white hover:underline <?php echo is_front_page() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Home</a>
             </li>
             <li>
-              <a class="nav-link text-white hover:underline <?php echo is_page('/menu') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Menu</a>
+              <a class="nav-link text-white hover:underline <?php echo is_page('menu') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Menu</a>
             </li>
             <li>
-              <a class="nav-link text-white hover:underline <?php echo is_page('/about-us') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/about-us'); ?>">About Us</a>
+              <a class="nav-link text-white hover:underline <?php echo is_page('about-us') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/about-us'); ?>">About Us</a>
             </li>
             <li>
-              <a class="nav-link text-white hover:underline <?php echo is_page('/our-story') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/our-story'); ?>">Our Story</a>
+              <a class="nav-link text-white hover:underline <?php echo is_page('our-story') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/our-story'); ?>">Our Story</a>
             </li>
             <li>
               <a class="nav-link text-white hover:underline <?php echo is_home() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/blog'); ?>">Blog</a>
             </li>
             <li>
-              <a class="nav-link text-white hover:underline <?php echo is_page('/contact') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/contact'); ?>">Contact</a>
+              <a class="nav-link text-white hover:underline <?php echo is_page('contact') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/contact'); ?>">Contact</a>
             </li>
         </ul>
     </nav>
