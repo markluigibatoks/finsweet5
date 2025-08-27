@@ -43,7 +43,7 @@
               <a class="nav-link text-white hover:underline <?php echo is_front_page() ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Home</a>
             </li>
             <li>
-              <a class="nav-link text-white hover:underline <?php echo is_page('menu') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/'); ?>">Menu</a>
+              <a class="nav-link text-white hover:underline <?php echo is_page('menu') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/menu'); ?>">Menu</a>
             </li>
             <li>
               <a class="nav-link text-white hover:underline <?php echo is_page('about-us') ? 'current-menu-item' : '' ?>" href="<?php echo site_url('/about-us'); ?>">About Us</a>
