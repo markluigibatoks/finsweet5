@@ -1,4 +1,4 @@
-<div class="main-box lg:pb-40 lg:pt-24 py-20">
+<main class="main-box lg:pb-40 lg:pt-24 py-20">
     <div class="wrapper">
         <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
             <div class="lg:order-2 flex lg:gap-17 md:gap-10 gap-5">
@@ -56,4 +56,4 @@
             </div>
         </div>
     </div>
-</div>
+</main>
